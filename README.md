@@ -123,5 +123,5 @@ classification information.
 *****
 
 Let me know what you thought of this tutorial. To see more of my work check out
-my website, [www.AlexWulff.com,](http://www.AlexWulff.com,) and my [Medium
+my website, [www.AlexWulff.com,](http://www.AlexWulff.com) and my [Medium
 page](https://medium.com/@Alex_Wulff).
