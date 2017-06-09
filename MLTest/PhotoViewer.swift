@@ -99,7 +99,6 @@ extension PhotoViewer {
         self.flowLayout.scrollDirection = .horizontal
         self.collection = UICollectionView(frame: .zero, collectionViewLayout: self.flowLayout)
         self.collection?.translatesAutoresizingMaskIntoConstraints = false
-        self.collection?.backgroundColor = UIColor.lightGray
         self.collection?.dataSource = self
         self.collection?.delegate = self
         self.collection?.isPagingEnabled = true

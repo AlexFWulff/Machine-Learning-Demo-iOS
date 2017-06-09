@@ -12,16 +12,12 @@ import Vision
 class ViewController: UIViewController {
 
     @IBOutlet weak var photoViewer: PhotoViewer!
-    
+    @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var textView: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        
-        
-        
         
         var photos: [UIImage] = [UIImage]()
         
@@ -34,10 +30,11 @@ class ViewController: UIViewController {
         photos.append(#imageLiteral(resourceName: "stairs.jpg"))
         photos.append(#imageLiteral(resourceName: "sun.jpg"))
         
-        
         self.photoViewer.images = photos
         
         self.photoViewer.onSelection = self.onImageSelection(_:)
+        
+        onImageSelection(#imageLiteral(resourceName: "airport.jpg"))
     }
     
     func myResultsMethod(request: VNRequest, error: Error?) {
@@ -59,8 +56,11 @@ class ViewController: UIViewController {
     
     func onImageSelection(_ image: UIImage) {
         
+        self.imageView.image = image
+        self.textView.scrollRangeToVisible(NSMakeRange(0, 0))
+        
         guard let cg_image = image.cgImage else {
-            return
+            fatalError("Couldn't get cgImage")
         }
         
         guard let model = try? VNCoreMLModel(for: GoogLeNetPlaces().model) else {
@@ -74,9 +74,6 @@ class ViewController: UIViewController {
         guard (try? handler.perform([request])) != nil else {
             fatalError("Error on model")
         }
-        
-        
     }
-    
 }
 

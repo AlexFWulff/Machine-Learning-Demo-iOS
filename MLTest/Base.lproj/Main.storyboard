@@ -21,30 +21,50 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="h6w-9F-iLr">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Vt-gB-8WL">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="1fU-HO-pPR">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p6M-c7-Wdq" customClass="PhotoViewer" customModule="MLTest" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="467"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="t2K-hh-TdC">
                                 <rect key="frame" x="0.0" y="467" width="375" height="200"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="h6w-9F-iLr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="0uK-07-Qja"/>
+                            <constraint firstItem="3Vt-gB-8WL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="2uK-nu-kJQ"/>
+                            <constraint firstAttribute="trailing" secondItem="3Vt-gB-8WL" secondAttribute="trailing" id="5GT-Kb-lcu"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="t2K-hh-TdC" secondAttribute="bottom" id="5UO-Xs-IhP"/>
+                            <constraint firstAttribute="trailing" secondItem="h6w-9F-iLr" secondAttribute="trailing" id="AO3-u2-Oik"/>
                             <constraint firstItem="t2K-hh-TdC" firstAttribute="top" secondItem="p6M-c7-Wdq" secondAttribute="bottom" id="LXs-GT-MyE"/>
                             <constraint firstItem="p6M-c7-Wdq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="MP9-YP-1Ge"/>
+                            <constraint firstItem="3Vt-gB-8WL" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Ywh-jt-HSc"/>
+                            <constraint firstItem="h6w-9F-iLr" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="fT8-Va-cq8"/>
                             <constraint firstItem="p6M-c7-Wdq" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="gJO-EQ-ykJ"/>
                             <constraint firstItem="t2K-hh-TdC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="lAX-H0-vK6"/>
                             <constraint firstAttribute="trailing" secondItem="t2K-hh-TdC" secondAttribute="trailing" id="ntH-b0-BU4"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="h6w-9F-iLr" secondAttribute="bottom" id="o68-5k-8Wm"/>
                             <constraint firstAttribute="trailing" secondItem="p6M-c7-Wdq" secondAttribute="trailing" id="rvk-mY-HVm"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="3Vt-gB-8WL" secondAttribute="bottom" id="uwn-DM-9ul"/>
                             <constraint firstItem="p6M-c7-Wdq" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1.4" id="v89-dp-sdL"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="imageView" destination="h6w-9F-iLr" id="etT-lO-g1X"/>
                         <outlet property="photoViewer" destination="p6M-c7-Wdq" id="5kR-UU-MOB"/>
                         <outlet property="textView" destination="t2K-hh-TdC" id="red-5u-ssM"/>
                     </connections>
