@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C343B1B11EEA6F6F009256E6 /* PhotoViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C343B1B01EEA6F6F009256E6 /* PhotoViewer.swift */; };
+		C343B1B31EEA7049009256E6 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C343B1B21EEA7049009256E6 /* PhotoCollectionViewCell.swift */; };
 		FA4FBF0D1EE77E06009F0324 /* airport.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA4FBF051EE77E06009F0324 /* airport.jpg */; };
 		FA4FBF0E1EE77E06009F0324 /* desert.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA4FBF061EE77E06009F0324 /* desert.jpg */; };
 		FA4FBF0F1EE77E06009F0324 /* forrest.JPG in Resources */ = {isa = PBXBuildFile; fileRef = FA4FBF071EE77E06009F0324 /* forrest.JPG */; };
@@ -25,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C343B1B01EEA6F6F009256E6 /* PhotoViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewer.swift; sourceTree = "<group>"; };
+		C343B1B21EEA7049009256E6 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		FA4FBF051EE77E06009F0324 /* airport.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = airport.jpg; sourceTree = "<group>"; };
 		FA4FBF061EE77E06009F0324 /* desert.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = desert.jpg; sourceTree = "<group>"; };
 		FA4FBF071EE77E06009F0324 /* forrest.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = forrest.JPG; sourceTree = "<group>"; };
@@ -90,6 +94,8 @@
 				FA80B3211EE754EF0049D8DE /* Assets.xcassets */,
 				FA80B3231EE754EF0049D8DE /* LaunchScreen.storyboard */,
 				FA80B3261EE754EF0049D8DE /* Info.plist */,
+				C343B1B01EEA6F6F009256E6 /* PhotoViewer.swift */,
+				C343B1B21EEA7049009256E6 /* PhotoCollectionViewCell.swift */,
 			);
 			path = MLTest;
 			sourceTree = "<group>";
@@ -177,6 +183,8 @@
 				FA80B31B1EE754EF0049D8DE /* AppDelegate.swift in Sources */,
 				FADDD42C1EE8134800EF604C /* README.md in Sources */,
 				FA5A333F1EE77C0B00D80EF1 /* GoogLeNetPlaces.mlmodel in Sources */,
+				C343B1B11EEA6F6F009256E6 /* PhotoViewer.swift in Sources */,
+				C343B1B31EEA7049009256E6 /* PhotoCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,7 +317,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = C3MYKPZK6A;
+				DEVELOPMENT_TEAM = WEZXTSQ23M;
 				INFOPLIST_FILE = MLTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ConiferApps.MLTest;
@@ -323,7 +331,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = C3MYKPZK6A;
+				DEVELOPMENT_TEAM = WEZXTSQ23M;
 				INFOPLIST_FILE = MLTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ConiferApps.MLTest;
