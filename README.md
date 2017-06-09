@@ -34,6 +34,8 @@ My sample project will take in an image and spit out likely categorizations with
 their respective level of confidence. All the calculations are handled on-device
 utilizing Apple’s new Core ML and Vision frameworks.
 
+![](https://cdn-images-1.medium.com/max/1600/1*q-YtREu2RVslR0VqW91xWw.png)
+
 The project itself is surprisingly sparse. I want to draw your attention to one
 file in particular: GoogLeNetPlaces.mlmodel. This file is a trained machine
 vision model that was created by Google researchers a few years ago. Apple’s new
@@ -47,6 +49,8 @@ or .storyboard. Instead, they are just a large collection of bytes that tell the
 device how to arrange the “neurons” that handle inputs. The more complex a
 model, the larger its size.
 
+![](https://cdn-images-1.medium.com/max/1600/1*6agZ1CcGVwiOaX3gNP8cYw.png)
+
 Apple has collected four different trained models for your use. You can find
 these at
 [https://developer.apple.com/machine-learning/](https://developer.apple.com/machine-learning/).
@@ -55,6 +59,7 @@ models into the iOS-accessible Core ML format. As the format gains more traction
 I expect that you will be able to get your hands on trained models for all sorts
 of use cases.
 
+![](https://cdn-images-1.medium.com/max/1600/1*CgqOISkGGnUbtoWeqKzE9A.png)
 <span class="figcaption_hack">One of the many bugs: even though the project compiles, the editor still thinks
 that the Swift wrapper doesn’t exist.</span>
 
@@ -79,6 +84,8 @@ project](https://developer.apple.com/documentation/coreml/integrating_a_core_ml_
 demonstrating their use. This is completely independent of Vision and solely
 relies on Core ML.
 
+![](https://cdn-images-1.medium.com/max/1600/1*f79TPxKzLEozn93MzEK5tg.png)
+
 The next snippet sets up and handles the request. In the project navigator you
 should see a variety of different images to try out on this model. The image
 that the model is computing is passed when the user swipes to a new image in the
@@ -89,6 +96,8 @@ for their most-likely categorization. I’m just an 18-year-old kid so I can’t
 really explain to you why this happens. If someone reading my article knows why
 this is the case please leave a response below. I’d love to find out!
 
+![](https://cdn-images-1.medium.com/max/1600/1*toh4DQzZWUh6Te34i-TVHQ.png)
+
 The last function takes all of the results and adds them to the UITextView.
 Scroll down in the UITextView to see all the possibilites that the algorithm can
 dream up!
@@ -98,6 +107,8 @@ dropping files into the project navigator. Don’t even attempt this in Xcode 9
 (until the problem is fixed) as it will create huge problems with dependency
 chains. Just open up the Xcode project in an earlier version of Xcode, select
 copy items if needed, and confirm.
+
+![](https://cdn-images-1.medium.com/max/1600/1*FnFPKss7G8lL-5Tv6vz_Bw.png)
 
 The last bug that may affect you will sometimes crop up when running your
 project. If the simulator fails to launch just quit out of both the simulator
