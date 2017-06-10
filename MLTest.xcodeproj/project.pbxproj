@@ -45,7 +45,7 @@
 		FA80B3211EE754EF0049D8DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA80B3241EE754EF0049D8DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA80B3261EE754EF0049D8DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FADDD42B1EE8134800EF604C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		FADDD42B1EE8134800EF604C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = MLTest/SupportingFiles/README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +59,90 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C32601721EEC93580032415B /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				C32601781EEC93A40032415B /* AssetCatelogs */,
+				C32601771EEC939D0032415B /* Images */,
+				FADDD42B1EE8134800EF604C /* README.md */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		C32601731EEC93740032415B /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				FA80B31A1EE754EF0049D8DE /* AppDelegate.swift */,
+			);
+			path = "App Delegate";
+			sourceTree = "<group>";
+		};
+		C32601741EEC93830032415B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C32601791EEC93BB0032415B /* MLModels */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C32601751EEC93890032415B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C326017A1EEC93EC0032415B /* CustomViews */,
+				FA80B31E1EE754EF0049D8DE /* Main.storyboard */,
+				FA80B3231EE754EF0049D8DE /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C32601761EEC938F0032415B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FA80B31C1EE754EF0049D8DE /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C32601771EEC939D0032415B /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				FA4FBF051EE77E06009F0324 /* airport.jpg */,
+				FA4FBF061EE77E06009F0324 /* desert.jpg */,
+				FA4FBF071EE77E06009F0324 /* forrest.JPG */,
+				FA4FBF081EE77E06009F0324 /* mountain-low-res.jpg */,
+				FA4FBF091EE77E06009F0324 /* mountain.jpg */,
+				FA4FBF0A1EE77E06009F0324 /* stairs-low-res.jpg */,
+				FA4FBF0B1EE77E06009F0324 /* stairs.jpg */,
+				FA4FBF0C1EE77E06009F0324 /* sun.jpg */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		C32601781EEC93A40032415B /* AssetCatelogs */ = {
+			isa = PBXGroup;
+			children = (
+				FA80B3211EE754EF0049D8DE /* Assets.xcassets */,
+			);
+			path = AssetCatelogs;
+			sourceTree = "<group>";
+		};
+		C32601791EEC93BB0032415B /* MLModels */ = {
+			isa = PBXGroup;
+			children = (
+				FA5A333E1EE77C0B00D80EF1 /* GoogLeNetPlaces.mlmodel */,
+			);
+			path = MLModels;
+			sourceTree = "<group>";
+		};
+		C326017A1EEC93EC0032415B /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				C343B1B01EEA6F6F009256E6 /* PhotoViewer.swift */,
+				C343B1B21EEA7049009256E6 /* PhotoCollectionViewCell.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
 		FA80B30E1EE754EF0049D8DE = {
 			isa = PBXGroup;
 			children = (
@@ -78,24 +162,12 @@
 		FA80B3191EE754EF0049D8DE /* MLTest */ = {
 			isa = PBXGroup;
 			children = (
-				FADDD42B1EE8134800EF604C /* README.md */,
-				FA4FBF051EE77E06009F0324 /* airport.jpg */,
-				FA4FBF061EE77E06009F0324 /* desert.jpg */,
-				FA4FBF071EE77E06009F0324 /* forrest.JPG */,
-				FA4FBF081EE77E06009F0324 /* mountain-low-res.jpg */,
-				FA4FBF091EE77E06009F0324 /* mountain.jpg */,
-				FA4FBF0A1EE77E06009F0324 /* stairs-low-res.jpg */,
-				FA4FBF0B1EE77E06009F0324 /* stairs.jpg */,
-				FA4FBF0C1EE77E06009F0324 /* sun.jpg */,
-				FA5A333E1EE77C0B00D80EF1 /* GoogLeNetPlaces.mlmodel */,
-				FA80B31A1EE754EF0049D8DE /* AppDelegate.swift */,
-				FA80B31C1EE754EF0049D8DE /* ViewController.swift */,
-				FA80B31E1EE754EF0049D8DE /* Main.storyboard */,
-				FA80B3211EE754EF0049D8DE /* Assets.xcassets */,
-				FA80B3231EE754EF0049D8DE /* LaunchScreen.storyboard */,
 				FA80B3261EE754EF0049D8DE /* Info.plist */,
-				C343B1B01EEA6F6F009256E6 /* PhotoViewer.swift */,
-				C343B1B21EEA7049009256E6 /* PhotoCollectionViewCell.swift */,
+				C32601761EEC938F0032415B /* Controllers */,
+				C32601751EEC93890032415B /* Views */,
+				C32601741EEC93830032415B /* Models */,
+				C32601731EEC93740032415B /* App Delegate */,
+				C32601721EEC93580032415B /* SupportingFiles */,
 			);
 			path = MLTest;
 			sourceTree = "<group>";
